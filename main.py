@@ -406,7 +406,6 @@ def start_screen(screen):
     )
     screen.blit(image, [(width - image.get_width()) / 2, 100])
     convert_text(screen, [(width - 20 * 5) / 2, 300], "start")
-    convert_text(screen, [(width - 20 * 10) / 2, 400], "liderboard")
 
 
 def score(screen, event: str, scores: int):
@@ -460,15 +459,6 @@ def game_over(screen, scores: int):
             (height - game_height) / 2 + 230,
         ],
         "retry",
-    )
-    convert_text(
-        screen,
-        [
-            (width - game_width) / 2
-            + (((width - game_width) - len("main menu") * 20) / 2),
-            (height - game_height) / 2 + 310,
-        ],
-        "main menu",
     )
 
 
